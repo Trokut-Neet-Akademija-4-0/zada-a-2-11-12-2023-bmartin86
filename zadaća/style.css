@@ -1,0 +1,238 @@
+@font-face {
+  font-family: ssp-regular;
+  src: url('fonts/SourceSansPro-Regular.otf');
+}
+@font-face {
+  font-family: ssp-semibold;
+  src: url('fonts/SourceSansPro-Semibold.otf');
+}
+@font-face {
+  font-family: silk-reg;
+  src: url('fonts/Silkscreen-Regular.ttf');
+}
+@font-face {
+  font-family: kanit-regular;
+  src: url('fonts/Kanit-Regular.ttf');
+}
+body {
+  margin: 0 auto;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('images/background4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.33;
+  z-index: -1;
+}
+header,
+main, 
+footer {
+  margin: 0 auto;
+  max-width: 991px;
+  text-align: center;
+}
+header {
+  font-family: ssp-semibold;
+}
+nav {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 110px;
+  background-color: rgb(249, 249, 249);
+}
+.logo_container,
+.links_container,
+.searchbar_container {
+  display: inline-block;
+}
+.logo_container {
+  width: 8vw;
+  height: 100%;
+  float: left;
+  padding-top: 10px;
+}
+.logo_image {
+  height: 75px;
+}
+.links_container {
+  width: 36vw;
+  height: 100%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: inline-block;
+  padding: 40px;
+}
+a {
+  color: black;
+}
+.searchbar_container {
+  width: 20vw;
+}
+.search_form {
+  display: inline-block;
+}
+input {
+  width: 220px;
+  line-height: 25px;
+  font-family: ssp-regular;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 0;
+  padding-left: 6px;
+}
+button {
+  width: 30.5px;
+  height: 30.5px;
+  display: inline-block;
+  position: absolute;
+  background-color: white;
+}
+#search_icon {
+  position: inherit;
+  width: 16px;
+  left: 5px;
+  top: 5px;
+}
+main {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid black;
+}
+h1 {
+  font-family: silk-reg;
+  font-size: 3.5rem;
+  padding-bottom: 10px;
+  border-bottom: 5px solid black;
+}
+main figure {
+  margin-top: 80px;
+}
+main img {
+  width: 100%;
+  transition: .5s ease;
+}
+main img:hover {
+  box-shadow: 0 0 0 10px #000000;
+  transition: .5s ease;
+}
+main p {
+  font-family: kanit-regular;
+  font-size: 1.5rem;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  word-spacing: 0.4em;
+}
+footer {
+  margin-bottom: 40px;
+  height: 110px;
+  background-color: rgb(249, 249, 249);
+}
+.kontakt_tablica {
+  padding-bottom: 50px;
+}
+.kontakt_form {
+  padding-left: 150px;
+  padding-right: 50px;
+}
+.kontakt_form input {
+  width: 280px;
+}
+.kontakt_form label {
+  float: left;
+}
+.pošalji_poruku {
+  margin-top: 1em;
+  background-color: white;
+}
+.kontakt_info {
+  width: 350px;
+}
+.kontakt_logo_container{
+  padding-top: 48px;
+}
+#kontakt_logo {
+  width: 150px;
+}
+.usluge_container,
+.usluge_container_2 {
+  padding-bottom: 40px;
+}
+.usluge_container_2 {
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+}
+.usluge_container img,
+.usluge_container_2 img {
+  width: 380px;
+  float: right;
+  margin: 10px 10px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+}
+.usluge_container_2 img {
+  float: left;
+  margin-right: 14px;
+}
+.usluge_container img:hover,
+.usluge_container_2 img:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+}
+.usluge_container h3,
+.usluge_container_2 h3,
+.o_nama_container h3 {
+  font-size: 2.5rem;
+  font-family: silk-reg;
+}
+.usluge_paragraf {
+  text-align: left;
+  word-spacing: normal;
+}
+.usluge_container button,
+.usluge_container_2 button {
+  width: 150px;
+  background-color: white;
+  border: 2px solid black;
+  margin-top: 16px;
+}
+.usluge_container button,
+.usluge_container_2 button {
+  margin-left: 220px;
+}
+.usluge_container button:hover,
+.usluge_container_2 button:hover {
+  background-color: rgb(62, 181, 214);
+  color: rgb(20, 20, 20);
+  transition: 0.6s ease;
+}
+.usluge_container button a,
+.usluge_container_2 button a {
+  text-decoration: none;
+}
+.o_nama_paragraf {
+  word-spacing: normal;
+}
+a img {
+  transition: 1s ease;
+}
+a img:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: 1s ease;
+}
